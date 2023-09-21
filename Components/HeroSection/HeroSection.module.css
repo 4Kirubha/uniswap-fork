@@ -43,7 +43,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    width: 40%;
+    gap: 0.3rem;
     line-height: 0;
     background-color: #d4af37;
     border-radius: 0.5rem;

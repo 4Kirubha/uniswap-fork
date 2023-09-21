@@ -25,6 +25,7 @@ const NavBar = () => {
   ]
   const [openModel,setOpenModel] = useState(false);
   const [openTokenBox,setOpenTokenBox] = useState(false);
+  const [account,setAccount] = useState(false);
 
   return (
     <div className={Styles.NavBar}>
@@ -67,7 +68,12 @@ const NavBar = () => {
             </div>
             <p>Network name</p>
           </div>
-          <button onClick={() => setOpenModel(true)}>Address</button>
+          {account ?(
+            <button onClick={() => setOpenModel(true)}>Connect</button>
+
+          ):(
+            <button onClick={() => setOpenTokenBox(true)}>0x876b4dE......</button>
+          )}
           {openModel && (
             <Model setOpenModel={setOpenModel} connectWallet = "connect"/>
           )}
@@ -75,7 +81,7 @@ const NavBar = () => {
       </div>
       {/** TOKEN LIST */}
       {openTokenBox && (
-        <TokenList tokendata = "hey" setOpenTokenBox={setOpenTokenBox}/>
+        <TokenList tokenData = "hey" setOpenTokenBox={setOpenTokenBox}/>
       )}
     </div>
   );

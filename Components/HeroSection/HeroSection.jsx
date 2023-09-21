@@ -39,7 +39,7 @@ const HeroSection = ({accounts, tokenData}) => {
           <input type='text' placeholder='0'></input>
           <button onClick={() => setOpenToken(true)}>
             <Image
-              src={tokenOne.image || images.etherlogo}
+              src={tokenOne.image || images.ether}
               width={20}
               height={20}
               alt='ether'
@@ -53,7 +53,7 @@ const HeroSection = ({accounts, tokenData}) => {
           <input type='text' placeholder='0'></input>
           <button onClick={() => setOpenTokensTwo(true)}>
             <Image
-              src={tokenTwo.image || images.etherlogo}
+              src={tokenTwo.image || images.ether}
               width={20}
               height={20}
               alt='ether'

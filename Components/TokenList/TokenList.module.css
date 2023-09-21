@@ -4,8 +4,9 @@
     border-radius: 0.5rem;
     background-color: #1e1e1e;
     margin-top: 2rem;
-    margin-left: 66.4rem;
+    margin-left: 58.4rem;
     padding: 1rem;
+    z-index: 11111111111111;
 }
 .TokenList_title{
     width: 100%;
